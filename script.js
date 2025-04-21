@@ -19,7 +19,7 @@ btn.addEventListener("click",(e)=>{
 		tr.innerHTML=`<td>${title}</td>
 						<td>${author}</td>
 						<td>${isbn}</td>
-						<td><button class="clear" > x </button></td>`
+						<td><button class="delete" > x </button></td>`
 	list.appendChild(tr)
 
 	document.getElementById("title").value=""
@@ -31,7 +31,7 @@ let list2=document.getElementById("book-list")
 list2.addEventListener("click",(e)=>{
 
 	// e.preventDefault()
-	if(e.target.classList.contains("clear")){
+	if(e.target.classList.contains("delete")){
 		e.target.parentElement.parentElement.remove()
 	}
 	
